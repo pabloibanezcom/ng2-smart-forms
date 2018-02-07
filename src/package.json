@@ -1,0 +1,29 @@
+{
+  "name": "ng2-smart-forms",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pabloibanezcom/ng2-smart-forms"
+  },
+  "author": {
+    "name": "Pablo Ibanez",
+    "email": "me@pabloibanez.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pabloibanezcom/ng2-smart-forms/issues"
+  },
+  "main": "ng2-smart-forms.umd.js",
+  "module": "ng2-smart-forms.js",
+  "jsnext:main": "ng2-smart-forms.js",
+  "typings": "ng2-smart-forms.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
