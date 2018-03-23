@@ -1,0 +1,6 @@
+<div class="form-text form-group {{class}}">
+  <div class="form-group-inner">
+    <label for="{{label | lowercase}}">{{label}}</label>
+    <input [attr.disabled]="disabled" [attr.type]="type" class="form-control" [attr.name]="label | lowercase" [attr.placeholder]="label" >
+  </div>
+</div>

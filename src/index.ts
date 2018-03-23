@@ -6,11 +6,13 @@ import { FormButtonComponent } from './components/form-button/form-button.compon
 import { FormSelectComponent } from './components/form-select/form-select.component';
 import { FormSpanComponent } from './components/form-span/form-span.component';
 import { FormTextComponent } from './components/form-text/form-text.component';
+import { FormTextRCComponent } from './components/form-text-rc/form-text-rc.component';
 
 export * from './components/form-button/form-button.component';
 export * from './components/form-select/form-select.component';
 export * from './components/form-span/form-span.component';
 export * from './components/form-text/form-text.component';
+export * from './components/form-text-rc/form-text-rc.component';
 
 @NgModule({
   imports: [
@@ -21,13 +23,15 @@ export * from './components/form-text/form-text.component';
     FormButtonComponent,
     FormSelectComponent,
     FormSpanComponent,
-    FormTextComponent
+    FormTextComponent,
+    FormTextRCComponent
   ],
   exports: [
     FormButtonComponent,
     FormSelectComponent,
     FormSpanComponent,
-    FormTextComponent
+    FormTextComponent,
+    FormTextRCComponent
   ]
 })
 

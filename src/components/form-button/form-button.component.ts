@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'smart-form-button',
   templateUrl: './form-button.component.html',
-  styleUrls: ['./form-button.component.less']
+  styleUrls: ['./form-button.component.scss']
 })
 export class FormButtonComponent {
 

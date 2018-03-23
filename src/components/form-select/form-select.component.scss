@@ -1,0 +1,19 @@
+.form-select {
+    .error {
+        select {
+            border: 1px solid red;
+            box-shadow: 0 0 3px red;
+            -moz-box-shadow: 0 0 3px red;
+            -webkit-box-shadow: 0 0 3px red;
+            background-color: rgba(250, 50, 50, 0.1)
+        }
+    }
+    select {
+        &:focus {
+            border: 1px solid #f19c85;
+            box-shadow: 0 0 3px #f19c85;
+            -moz-box-shadow: 0 0 3px #f19c85;
+            -webkit-box-shadow: 0 0 3px #f19c85;
+        }
+    }
+}

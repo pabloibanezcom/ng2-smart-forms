@@ -3,13 +3,14 @@ import { Component, OnInit, OnChanges, SimpleChanges, Input, Output, EventEmitte
 @Component({
   selector: 'smart-form-select',
   templateUrl: './form-select.component.html',
-  styleUrls: ['./form-select.component.less']
+  styleUrls: ['./form-select.component.scss']
 })
 export class FormSelectComponent implements OnInit, OnChanges {
 
   @Input() type: string;
   @Input() class: string;
   @Input() label: string;
+  @Input() error: any;
   @Input() dataOption: string;
   @Input() options: any[];
   @Input() optionLabel: string;
@@ -36,6 +37,7 @@ export class FormSelectComponent implements OnInit, OnChanges {
   }
 
   updateData(event) {
+    this.error = null;
     this.model = event;
     this.modelChange.emit(event);
   }
