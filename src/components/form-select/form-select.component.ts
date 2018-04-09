@@ -43,11 +43,13 @@ export class FormSelectComponent implements OnInit, OnChanges {
   }
 
   private setOptions() {
+    this.options = [];
+    if (this.emptyOption) {
+      this.options.push({ label: '', value: null });
+    }
     if (this.type === 'YesNo') {
-      this.options = [
-        { label: 'Yes', value: true },
-        { label: 'No', value: false }
-      ];
+      this.options.push({ label: 'Si', value: true });
+      this.options.push({ label: 'No', value: false });
     }
   }
 
